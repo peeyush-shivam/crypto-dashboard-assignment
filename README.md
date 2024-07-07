@@ -14,11 +14,11 @@ CryptoMark is a comprehensive cryptocurrency tracking application built with Rea
 
 ## Features
 
-- View details of various cryptocurrencies.
+- View details of various cryptocurrencies with an adiitional favourites page.
 - Real-time price updates using WebSockets.
-- Currency conversion.
 - Manage favorite cryptocurrencies with persistence across sessions using `localStorage`.
-- Responsive design.
+- Mobile Responsive design.
+  
 
 ## Technologies
 
@@ -54,13 +54,13 @@ npm run dev
 ## Usage
 
 ### Fetching Cryptocurrencies
-The application fetches cryptocurrency data from the CoinCap API at regular intervals to keep the data updated. This is handled in the LandingPage component.
+The application fetches cryptocurrency data from the CoinCap API at regular intervals to keep the data updated. This is handled in the DashBoard component.
 
 ### Viewing Cryptocurrency Details
-Clicking on a cryptocurrency from the list navigates to a detailed view, which displays current price, market cap, volume, and supply information. Real-time price updates are handled via WebSocket.
+Clicking on the name of a cryptocurrency from the list navigates to a detailed view, which displays current price, market cap, volume, and supply information. Real-time price updates are handled via WebSocket.
 
 ### Managing Favorites 
-Users can add or remove cryptocurrencies from their favorites list. The count of favorites is displayed in the navbar.
+Users can add or remove cryptocurrencies from their favorites list. The count of favorites is displayed in the navbar, on clicking it navigates to the favourites page, wherin clicking on the currency will redirect to the details page.
 
 ## API Reference
 ### CoinCap API
@@ -81,7 +81,6 @@ We welcome contributions to improve CryptoMark! To contribute, please follow the
 5. Push to the branch (git push origin feature/your-feature-name).
 6. Create a new Pull Request.
 
-### Happy coding!
 
 
 
